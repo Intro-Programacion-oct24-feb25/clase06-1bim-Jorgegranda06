@@ -42,6 +42,7 @@ public class EjemploCadenas02 {
                 pais);
         
         System.out.printf("%s", cadenaFinal);
-        
+        // l string.format sirve para acumular datos de una cadena
+        // y aqui lo utilizamos para almacenar ciudad, provincia, país
     }
 }
