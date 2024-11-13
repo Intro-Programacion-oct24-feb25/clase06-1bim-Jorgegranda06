@@ -28,7 +28,7 @@ public class Comerciotres {
         double coeficiente = 0.6;
         double bono  = 0;
         
-        double porcentajeSeguro = 8;
+        double porcentajeSeguro;
         double adicionalSeguro;
         
         double sueldoFinal; 
@@ -49,8 +49,34 @@ public class Comerciotres {
                 + "por favor");
         numeroProductos = entrada.nextInt();
         
+        System.out.println("Ingrese el porcentaje de seguro por favor");
+        porcentajeSeguro = entrada.nextDouble();
         // calcular la productividad
         productividad = numeroProductos * coeficiente;
+        
+       // opción 1
+        if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
+            porcentajeSeguro = porcentajeSeguro + 0;
+        } else {
+            porcentajeSeguro = 10;
+        }
+// este si funciona porque al momento de imprimir nos permite ver si es f o v
+        // opción 2
+//        if (porcentajeSeguro > 15) {
+//           porcentajeSeguro = 10;
+//        }
+// Esta si funciona pero al poner un numero negativo nos da falso
+         // opción 3
+//        if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
+//            porcentajeSeguro = 10;
+//        }
+// Esta nos da un resulta falso pero si funviona
+//        // opción 4
+//        if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
+//            porcentajeSeguro = 10;
+//        }
+        // Este no funciona porque si elegimos 1 o 15 nos saldra error
+
         
         if (productividad<=30){
             bono = 25; // $25
