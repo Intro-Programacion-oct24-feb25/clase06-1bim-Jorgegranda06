@@ -34,8 +34,11 @@ public class Ejemplo031 {
         int edad = entrada.nextInt();
         
         System.out.println("Ingrese su universidad");
+        
         String universidad = entrada.nextLine();
+       
         // nombre = "atacames"
+        
         char valor = nombre.charAt(0); // obtener el primer caracter de una
         // ANA DIAZ con edad 19, es estudiante de UTPL
 
@@ -47,8 +50,9 @@ public class Ejemplo031 {
             case 'i':
             case 'o':
             case 'u':
-                System.out.printf("Nombre con inicial %s de %s\n", 
-                        valor, nombre.toLowerCase());
+                System.out.printf("%s %s con edad %d, es estudiante de %s\n", 
+                        nombre.toUpperCase(), apellido.toUpperCase(), edad, 
+                        universidad);
                 break;
             
             default:
