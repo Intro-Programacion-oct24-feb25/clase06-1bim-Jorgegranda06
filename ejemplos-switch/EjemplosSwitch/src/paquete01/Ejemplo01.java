@@ -73,11 +73,10 @@ public class Ejemplo01 {
                 break;
                 
             case "Domingo":
-            case "Martes":
-            case "martes":
-            case "MarTes":
-            case "marTes":
-            case "MARTES":
+            case "domingo":
+            case "DoMingo":
+            case "domiNgo":
+            case "DOMINGO":
 
                 System.out.printf("%s, es el séptimo día "
                         + "de la semana", cadena);
