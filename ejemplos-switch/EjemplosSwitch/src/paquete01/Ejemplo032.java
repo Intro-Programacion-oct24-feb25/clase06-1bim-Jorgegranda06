@@ -29,6 +29,9 @@ public class Ejemplo032 {
         String nombre = entrada.nextLine();
         // nombre = "atacames"
         nombre = nombre.toUpperCase();// atacames
+        
+        String nombre2 = nombre.substring(0,1);// utilizamos subsstring para 
+        // modificar los case
         char valor = nombre.charAt(0); // obtener el primer caracter de una
                                        // cadena
                                        // a
@@ -41,8 +44,8 @@ public class Ejemplo032 {
             case'o':
             case'u':    
                 System.out.printf("Nombre con inicial %s de %s\n", 
-                        valor, nombre.toLowerCase());
-                break;
+                        nombre2.toUpperCase(), nombre.toLowerCase());
+                break;// utilizamos la variable nombre2 para modificsr el case
 
             default:
                 System.out.println("opción incorrecta; ninguna de las "
